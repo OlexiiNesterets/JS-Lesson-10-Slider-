@@ -1,0 +1,151 @@
+@import url("..//css/reset.css");
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+
+.page {
+    padding-top: 63px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    height: 286px;
+    margin-bottom: 105px;
+}
+
+.header__subtitle {
+    font: 500 18px 'Poppins', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    color:  #303030;
+}
+
+.header__title {
+    font: 700 86px/0.95 'Poppins', sans-serif;
+    text-transform: uppercase;
+    width: 1040px;
+    color: black;
+}
+
+.main {
+    padding-bottom: 128px;
+}
+
+.carousel {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
+}
+
+.slick-slide {
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+}
+
+
+.item__content {
+    position: relative;
+    display: flex;
+    height: 300px;
+    width: 330px;
+}
+
+.item__content--sofa {
+    background: url('../img/sofa.jpg') 50% 50%/cover;
+}
+
+.item__content--lamp {
+    background: url('../img/lamp.jpg') 50% 50%/cover;
+}
+
+.item__content--bicycle {
+    background: url('../img/bicycle.jpg') 50% 50%/cover;
+}
+
+.item__content--fedex {
+    background: url('../img/fedex.jpg') 50% 50%/cover;
+}
+
+.item__info {
+    position: absolute;
+    color: white;
+    width: 300px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info__title {
+    font: 700 22px/0.85 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    flex-basis: 45px;
+}
+
+.info__author {
+    font: 700 13px/1 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+
+.mask {
+    background: rgb(27, 241, 173);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.mask:hover {
+    opacity: 0.9;
+}
+
+.carousel__arrow {
+    position: absolute;
+    top: 47.5%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.carousel__arrow--left {
+    left: -70px;
+}
+
+.carousel__arrow--left::after {
+    content: "";
+    display: block;
+    margin: 38% 44%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 13px;
+    height: 13px;
+    transform: rotate(45deg);
+}
+
+.carousel__arrow--right {
+    right: -70px;
+}
+
+.carousel__arrow--right::after {
+    content: "";
+    display: block;
+    margin: 40% 32%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 13px;
+    height: 13px;
+    transform: rotate(-135deg);
+}
